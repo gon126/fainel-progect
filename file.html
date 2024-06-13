@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+        
+    <head>
+        <title>live Game</title>    
+    </head>
+    
+    <body>
+        <h1>i love games</h1>
+        <h2>you need to remeber the facail exprtion and input it in the below </h2>
+        <p>enjoy the game</p>
+
+        <img src="happy emoji.jpg" id="happy-img" >
+        <button onclick="game()">press to play</button>
+
+           <input type="text">
+    </body>
+
+    <style>
+        h1 {
+            color: yellow;
+            background-color: aqua;
+            width: fit-content;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px blue;
+        }
+
+        h2 {
+            color: blue;
+            background-color: chocolate;
+            width: fit-content;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 14px,16px,15px black;
+        }
+        p {
+          color: powderblue;
+          background-color: darkorange;
+           width: fit-content;
+           font-family: serif;
+           padding: 2px;
+           border-radius: 3px;
+           box-shadow: 4px,5px,6px red;
+        }
+    </style>
+
+    <script> 
+    
+    function game() {
+        const imgtag = document.getElementById("happy-img");
+        const imgsrc = imgtag.src; 
+
+        if(imgsrc.includes("happy")) {
+            imgtag.src = 'sus sad.jpg';
+        } else { 
+            imgtag.src = 'happy emoji.jpg';  
+        }
+    }
+    </script>
+
+</html>
